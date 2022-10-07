@@ -1,0 +1,86 @@
+table, th, td{
+    border: 5px solid;
+    background-color: forestgreen;
+    border-color: black;
+    border-collapse: collapse;
+    width: auto;
+    font-family: sans-serif;
+    table-layout: fixed;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    color: ivory;
+    width: 25%;
+    height: 30px;
+}
+th{
+    color: whitesmoke;
+    height: 20px;
+}
+.div1{
+    padding: 20px;
+    text-align: center;
+}
+body{
+    background: skyblue;
+}
+ul, li {
+    align-content: center;
+    list-style: none;
+    display: inline;
+}
+@keyframes change_color {
+    0% {color: whitesmoke;}
+    50% {color: seagreen;}
+    100% {color: whitesmoke;}
+}
+h1{
+    animation-name: change_color;
+    text-align: center;
+    color: ivory;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+p{
+    font-size: 18px;
+    color: black;
+}
+.div2{
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+}
+a:link, a:visited {
+     background-color: forestgreen;
+     color: white;
+     padding: 14px 25px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     border: 3px solid black;
+     border-radius: 8px;
+
+ }
+a:hover{
+    color: darkgreen;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img {
+    border: 5px solid black;
+}
+li {
+    display: inline;
+}
+h3{
+    text-align: center;
+}
