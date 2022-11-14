@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-image: linear-gradient(to bottom, grey, #04AA6D);
+
+}
+  .header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: center;
+}
+  .header h3 {
+  text-align: center;
+    font-size: 90%;
+}
+  .footer {
+  position: fixed;
+  bottom: 0;
+   width: 100%;
+   height: 60px;  
+  background-color: #f1f1f1;
+}
+  .footer h3 {
+  text-align: center;
+}
+
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+.content {
+  padding: 100px;
+}
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+</style>
+</head>
+<body>
+
+<div class="header" id="header">
+  <h2>Spring</h2>
+  <h3>To stave off seasonal depression, I like to remind myself whats waiting around the corner: Spring!</h3>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+  <div class="footer" id="footer">
+  <h3>What are other ways to stay positive when the weather seems so dreary?</h3>
+</div>
+
+<div class="content">
+  <body>
+
+<div class="content">
+<div class="row"> 
+  <div class="column">
+    <img src="/flowers/bees.jpg" style="width:100%" id="my">
+    <img src="/flowers/daisy.jpg" style="width:100%">
+    <img src="/flowers/hydrangea.jpg" style="width:100%">
+    <img src="/flowers/bunny.jfif" style="width:100%">
+    <img src="/flowers/lilac.jpg" style="width:100%">
+    <img src="/flowers/butterfly.jfif" style="width:100%">
+    <img src="/flowers/duck1.jpg" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="/flowers/tulips.jpg" style="width:100%">
+    <img src="/flowers/bluejay.jpg" style="width:100%">
+    <img src="/flowers/kittens.jpg" style="width:100%">
+    <img src="/flowers/bees.jpg" style="width:100%">
+    <img src="/flowers/Roses.jpg" style="width:100%">
+    <img src="/flowers/goat.jfif" style="width:100%">
+    <img src="/flowers/archway.jfif" style="width:100%">
+
+
+  </div>  
+  <div class="column">
+    <img src="/flowers/daisy.jpg" style="width:100%">
+    <img src="/flowers/hydrangea.jpg" style="width:100%">
+    <img src="/flowers/lilac.jpg" style="width:100%">
+    <img src="/flowers/caterpillar.jfif" style="width:100%">
+    <img src="/flowers/lilac.jpg" style="width:100%">
+    <img src="/flowers/goat2.jpg" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="/flowers/goat.jfif" style="width:100%">
+    <img src="/flowers/archway.jfif" style="width:100%">
+    <img src="/flowers/duck1.jpg" style="width:100%">
+    <img src="/flowers/tulips.jpg" style="width:100%">
+    <img src="/flowers/chick.jpg" style="width:100%">
+    <img src="/flowers/Roses.jpg" style="width:100%">
+    <img src="/flowers/kittens.jpg" style="width:100%">
+
+
+  </div>
+</div>
+</div>
+</body>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 25) {
+    document.getElementById("header").style.fontSize = "15px";
+    document.getElementById("footer").style.fontSize = "20px";
+
+  } else {
+    document.getElementById("header").style.fontSize = "20px";
+    document.getElementById("footer").style.fontSize = "15px";
+
+  }
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html> 
