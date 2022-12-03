@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <div class="topnav">
+<button>Home</button>
+    </div>
+<div class="search">
+  <input type="search" class="search-box" id="searchVar" autocomplete="off" />
+  <span class="search-button">
+    <span class="search-icon" id="fetchdata"></span>
+  </span>
+</div>
+<header>
+  <div class="header">
+    <h1>
+      Internet Movie Database
+    </h1>
+    <h3>
+      Below is a list of IMDB's top ten movies. The search feature will allow you to search IMDB's database for other movies. Attached to each movie/show is a small list of the crew memebers. Each query will only produce ten results sorted by ranking. Please allow some time to load. There is a limited number of API queries per day. Check back tomorrow if someone used them all up!
+      P.S. I used jQuery for the search button animation ;)
+    </h3>
+  </div>
+</header>
+<div id="result"></div>
+<script src="script.js"></script>
+</body>
+
+</html>
